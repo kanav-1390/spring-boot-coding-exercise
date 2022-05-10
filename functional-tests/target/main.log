@@ -1,0 +1,86 @@
+16:50:34.150 request:
+1 > GET http://localhost:8080/actuator/health
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_202)
+
+16:50:34.192 response time in milliseconds: 39.88
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 < Date: Tue, 10 May 2022 06:50:34 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"status":"UP"}
+
+16:50:34.212 request:
+1 > GET http://localhost:8080/actuator/info
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_202)
+
+16:50:34.227 response time in milliseconds: 14.33
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 < Date: Tue, 10 May 2022 06:50:34 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"build":{"version":"1.0.0-SNAPSHOT","artifact":"microservice","name":"microservice","group":"com.telstra.code-challenge","time":"2022-05-10T06:50:14.281Z"}}
+
+16:50:34.332 request:
+1 > GET http://localhost:8080/quotes/random
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_202)
+
+16:50:39.336 java.net.SocketTimeoutException: Read timed out, http call failed after 5004 milliseconds for URL: http://localhost:8080/quotes/random
+16:50:39.336 http request failed: 
+java.net.SocketTimeoutException: Read timed out
+16:50:39.366 request:
+1 > GET http://localhost:8080/quotes
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_202)
+
+16:50:44.372 java.net.SocketTimeoutException: Read timed out, http call failed after 5006 milliseconds for URL: http://localhost:8080/quotes
+16:50:44.373 http request failed: 
+java.net.SocketTimeoutException: Read timed out
+16:50:44.400 request:
+1 > GET http://localhost:8080/hello
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_202)
+
+16:50:44.408 response time in milliseconds: 7.42
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 10 May 2022 06:50:44 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":1,"content":"Hello, World!"}
+
